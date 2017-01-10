@@ -38,9 +38,9 @@
 * 前后关系即对每一对相邻的单词记录其各自的词元以及前后关系作为一个事实，如$“i\ precedes\ have”$，对于首尾两个单词，添加$“BEGIN\_SENTENCE\ precedes\ \$word"$和$“\$word\ precedes\  END\_SENTENCE"$；
 * 词性标注即把已标注的单词将其词元和词性作为一个事实加入到事实库，如$“good= Adjective”$。
 
-##### 2.2	规则
+  ##### 2.2规则
 
-​	在该系统中设计了两种规则：词表规则、关系规则。
+  ​在该系统中设计了两种规则：词表规则、关系规则。
 
 * 词表规则为预设的词典，对于特定的单词制定相应的词性集，包括动词、副词、代名词、名词、形容词、介词、不定代词，如：
   * $went= Verb$
@@ -56,18 +56,18 @@
   * $\$word1\ precedes\ \$word2,\ \$word2=Verb\rightarrow\$word1=Adverb $
   * $\$word1\ precedes\ \$word2,\ \$word2\ precedes\ \$word3,\ \$word1=Preposition,\ \$word2=Determiner\rightarrow\$word3=Noun $
 
-##### 2.3	演绎推理
+  ##### 2.3演绎推理
 
-​	该系统使用前向链接推理，就是根据已有事实推断出新的事实。例如已知事实$A\ is\ x$，根据规则$A\ is\ x\rightarrow B\ is\ y$。获得$B\ is\ y$。然后将$B\ is\ y$加入数据库。再寻找新的规则，即$B\ is\ y \rightarrow ...$。
+  ​该系统使用前向链接推理，就是根据已有事实推断出新的事实。例如已知事实$A\ is\ x$，根据规则$A\ is\ x\rightarrow B\ is\ y$。获得$B\ is\ y$。然后将$B\ is\ y$加入数据库。再寻找新的规则，即$B\ is\ y \rightarrow ...$。
 
 
 
 ### 3	代码说明
 
-​	在shell中运行test.py即可运行示例程序：
+​	在shell中运行Example.py即可运行示例程序：
 
 ```shell
-python test.py
+python Example.py
 ```
 
 ​	或在ipython中加载RuleBaseExpertTagger.py，然后调用tagSentence(sentence)函数标注自定义句子：

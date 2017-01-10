@@ -21,13 +21,13 @@ Project of AI（人工智能A COMP130031.01）
 
   故我们可以把问题描述如下：
 
-​	问题：对于简单陈述句进行词性标注
+  ​问题：对于简单陈述句进行词性标注
 
-​	输入：不含标点符号的单句
+  ​输入：不含标点符号的单句
 
-​	输出：对于句中的每个单词，输出对应的词性
+  ​输出：对于句中的每个单词，输出对应的词性
 
-​	约束：使用专家系统解决
+  ​约束：使用专家系统解决
 
 
 
@@ -68,12 +68,12 @@ Project of AI（人工智能A COMP130031.01）
 
   ​该系统使用前向链接推理，就是根据已有事实推断出新的事实。例如已知事实$A\ is\ x$，根据规则$A\ is\ x\rightarrow B\ is\ y$。获得$B\ is\ y$。然后将$B\ is\ y$加入数据库。再寻找新的规则，即$B\ is\ y \rightarrow ...$。
 
-### 3	代码说明
+  ### 3代码说明
 
-​	在shell中运行test.py即可运行示例程序：
+  ​在shell中运行Example.py即可运行示例程序：
 
 ```shell
-python test.py
+python Example.py
 ```
 
 ​	或在ipython中加载RuleBaseExpertTagger.py，然后调用tagSentence(sentence)函数标注自定义句子：
@@ -176,9 +176,9 @@ tagSentence("i am a boy")
 
 - **Examples.py**  #测试demo
 
-### 4	结果展示
+  ### 4结果展示
 
-​	在Examples.py中测试该词性标注器的表现，总共10个句子，5个句子由已定义的词组成，另外5个有已定义和未定义的词混合组成。
+  ​在Examples.py中测试该词性标注器的表现，总共10个句子，5个句子由已定义的词组成，另外5个有已定义和未定义的词混合组成。
 
 ```python
 # these sentences use only words that were defined
