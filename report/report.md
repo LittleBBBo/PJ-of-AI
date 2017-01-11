@@ -2,6 +2,8 @@
 
 <center>**13300200019 吴耀波**</center>
 
+**GitHub地址：**https://github.com/LittleBBBo/PJ-of-AI
+
 ### 1	问题描述
 
 ​	词性标注（Part-of-Speech tagging 或POS tagging)，又称词类标注或者简称标注，是指为分词结果中的每个单词标注一个正确的词性的程序，也即确定每个词是名词、动词、形容词或其他词性的过程。
